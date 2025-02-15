@@ -2019,3 +2019,11 @@ padding-left: 30px !important;
 .text-justify{
   text-align: justify;
 }
+
+.key-team-img{
+  border-radius: 50%;
+  width: 17rem;
+}
+.key-team-designation{
+  font-size: 18px;
+}
