@@ -1458,6 +1458,8 @@ section,
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-radius: 5px;
+  width: 270px;
+  height: 320px;
 }
 
 .team .team-member .member-img {
@@ -2026,4 +2028,19 @@ padding-left: 30px !important;
 }
 .key-team-designation{
   font-size: 18px;
+}
+.team2-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+@media (max-width: 992px){
+  .team2-container{
+    flex-direction: column;
+  }
+  .team .team-member{
+    margin: 20px 0;
+  }
 }
