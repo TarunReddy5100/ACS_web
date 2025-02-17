@@ -2068,3 +2068,11 @@ padding-left: 30px !important;
     border-left: 1px #000 solid;
   }
 }
+
+.contact-link{
+  color: var(--default-color);
+}
+.map-iframe{
+  width: 100%;
+  height: 100%;
+}
