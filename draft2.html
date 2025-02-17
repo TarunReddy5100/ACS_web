@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .upload-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .upload-label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .custom-file-upload {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        .custom-file-upload:hover {
+            background-color: #1669c7;
+        }
+
+        .custom-file-upload input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="upload-container">
+        <label class="upload-label">File upload</label>
+        <label for="file-upload" class="custom-file-upload">
+            + Upload File
+            <input type="file" id="file-upload">
+        </label>
+    </div>
+
+</body>
+</html>
