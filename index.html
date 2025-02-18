@@ -9,8 +9,12 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ACS Technologies" />
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,14 +30,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: BizLand
-  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -124,7 +120,6 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="artificial_intelligence_solutions.html">Artificial Intelligence Solutions</a></li>
@@ -136,8 +131,27 @@
                 <li><a href="managed_services.html">Managed Services</a></li>
               </ul>
             </li>
-            <li><a href="#portfolio">Products</a></li>
-            <li><a href="#team">Team</a></li>
+            <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Knowledge Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="smart_analytics.html">Smart Analytics</a></li>
+                    <li><a href="iot_automation.html">IOT & Automation</a></li>
+                    <li><a href="learning_and_management.html">Learning and Management</a></li>
+                    <li><a href="document_management.html">Document Management</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="hospitality_management.html">Hospitality Management</a></li>
+                    <li><a href="queue_management.html">Queue Management</a></li>
+                    <li><a href="visitor_management_system.html">Visitor Management System</a></li>
+                    <li><a href="helpdesk_management.html">Helpdesk Management</a></li>
+                    <li><a href="hrms.html">HRMS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li class="dropdown"><a href="#"><span>Investors</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="board_of_directors.html">Board of Directors</a></li>
@@ -165,23 +179,8 @@
                 <li><a href="information_of_consultants.html">Investor Information</a></li>
               </ul>
             </li>
-            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li> -->
+            <li><a href="team.html">Team</a></li>
+            <li><a href="clients.html">Clients</a></li>
             <li><a href="newsletters.html">Newsletters</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -202,7 +201,10 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Welcome to <br><span>ACS Technologies </span></h1>
+            <div class="banner-text-container">
+              <h1>Welcome to <br><span>ACS Technologies</span></h1>
+              <span class="banner-text">Explore. Innovate. Excel</span>
+            </div>
             <!-- <p>We are team of talented designers making websites with Bootstrap</p> -->
             <!-- <div class="d-flex">
               <a href="#about" class="btn-get-started">Get Started</a>
@@ -305,8 +307,78 @@
     </section>
     <!-- /About Section -->
 
+    <!-- Featured Services Section (Boxes) -->
+    <section id="featured-services" class="featured-services section light-background">
+      <div class="container">
+        <div class="row gy-4">
+          <div
+            class="col-xl-4 col-md-4 d-flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <p class="text-justify">
+                ACS Technologies revolutionized our IT infrastructure, optimizing our Data Centers and aligning them with cutting-edge trends. Their collaboration with top industry players like IBM and Dell was invaluable
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div
+            class="col-xl-4 col-md-4 d-flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <p class="text-justify">
+                ACS Technologies transformed our business with their custom software solutions. Their ability to integrate seamlessly with our systems improved our operations significantly. A true game-changer!
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div
+            class="col-xl-4 col-md-4 d-flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <p class="text-justify">
+                IOTIQ Automations brought our business into the future with their IoT and Smart Analytics. Their solutions have drastically improved our decision-making and customer interactions, fostering growth and innovation.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+        </div>
+      </div>
+    </section>
+    <!-- /Featured Services Section -->
+
+    <!-- About us section -->
+     <section id="about" class="about">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/home/homepage img.avif" alt="home" class="home-page-img">
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="home-page-heading">Pioneering <br>
+              Future-Ready <br>
+              IT Solutions</h1>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-justify">Embark on an unparalleled IT adventure with ACS Technologies. Since our inception in 1980 by tech visionaries from IBM and Bell Labs, we've been at the helm of IT innovation. Specializing in bespoke, cloud-based solutions, we seamlessly enhance your operational efficiency.</p>
+            <p class="text-justify">Our legacy isn't just in technology; it's in building enduring partnerships that navigate the ever-evolving IT terrain. With ACS, step into a future where technology transforms challenges into triumphs.</p>
+          </div>
+      </div>
+     </section>
+     <!-- /About us section -->
+
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -372,218 +444,8 @@
 
       </div>
 
-    </section><!-- /Services Section -->
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p><span>Our Core</span> <span class="description-title">Team</span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/team/ashok_buddharaju.avif" alt="Ashok Buddharaju" class="key-team-img">
-            </div>
-          </div>
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div>
-              <h4>Ashok Buddharaju</h4>
-              <p class="key-team-designation">Chairman & Managing Director</p>
-              <p class="text-justify">Ashok, is an Engineering graduate in Computer Sciences. In his 30 years of professional career, he headed the largest technical teams of supporting HP North America Consumer support during his tenure with Wipro and Brigade. Ashok is a Six Sigma champion and was instrumental in implementing Six Sigma quality initiatives in the corporate that he had worked earlier. He has managed the teams of over 2000 technical and quality personnel and was instrumental in establishing the Center of Excellence at Wipro. Ashok played a key role in transforming ACS from traditional IT services provider to a business solutions company offering latest technological solutions.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/team/Prabhakar_rao_alokam.avif" alt="Prabhakara Rao Alokam" class="key-team-img">
-            </div>
-          </div>
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div>
-              <h4>Prabhakara Rao Alokam</h4>
-              <p class="key-team-designation">CFO</p>
-              <p class="text-justify">Prabhakara Rao is a Chartered Accountant by profession and entrepreneur by choice. He is a seasoned financial professional who brings in 20 years of financial professional who brings in 20 years of financial, industrial expertise and specialization includes strategic planning & development of business model. He played key role in the Financing Strategy, Corporate Planning and Risk management and contributed to the company’s rapid growth in turnover and profitability. He is a Board Director for a Logistics and Transport Management Company, Promoter for an IT/ITES Company engaged in IT Infrastructure Management, Security Solutions and OTT Services. He has varied exposure in Agro based Seed Industry, Bulk Drug and Large Scale Dairy Industries.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/team/cvsn_murthy.avif" alt="CVSN Murthy" class="key-team-img">
-            </div>
-          </div>
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div>
-              <h4>CVSN Murthy</h4>
-              <p class="key-team-designation">Independent Director</p>
-              <p class="text-justify">CVSN Murthy is an established veteran in the IT industry. He had rich and hands-on experience of over 40 years in IT and Communications. Murthy holds Bachelors degree in Electrical and Electronics Engineering and M Tech in Neural Networks. Murthy had contributed extensively to the growth of ACS during his tenure as Managing Director for 25 years. He has started his career with a reputed management institute, Administrative Staff College of India (ASCI). He also had an association with Tera Software, KMC Constructions and Cosyn as Head of IT and Data Management Services. He is also an active Council member of Gerson and Lehrman Group(GLG), USA.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/team/srinivasan_neti.avif" alt="Srinivasan Neti" class="key-team-img">
-            </div>
-          </div>
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div>
-              <h4>Srinivasan Neti</h4>
-              <p class="key-team-designation">Independent Director</p>
-              <p class="text-justify">Srinivasan Neti is a professional with over 30 years of corporate experience in the Indian industry. He did his MBA from XLRI, Jamshedpur and B.Tech from MS University, Baroda. He is also a Six Sigma Black Belt and championed several Six Sigma projects. He has spent the early part of his career with Blow Plast Ltd. and RPG Cellular (now Aircel) mainly in the Sales function. In 1998, he joined Brigade Corporation, a US based BPO firm and built the India operations from scratch to over 4,000 employees across 5 delivery centers. Then he shifted focus in 2009 to the education sector and was the Country Head of Laurus EduTech, one of India’s premier skill development organizations. In 2011, he joined the renowned Ryan International Group of Institutions as COO, where he currently oversees the operations of the group’s schools.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/team/dr_swarna_subba_rao.avif" alt="Dr. Swarna Subba Rao" class="key-team-img">
-            </div>
-          </div>
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div>
-              <h4>Dr. Swarna Subba Rao</h4>
-              <p class="key-team-designation">Independent Director</p>
-              <p class="text-justify">Dr. Swarna Subba Rao brings a wealth of expertise across multiple sectors to ACS Technologies. As the former Surveyor General of India, he has made significant contributions to geospatial science and national development projects. Dr. Rao holds an M.Tech from NIT Warangal and is highly respected for his leadership in implementing state-of-the-art technology for surveying and mapping in India. He has advised on various technology-driven initiatives, with a deep understanding of data management, infrastructure development, and national planning.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="assets/img/team/anitha_alokam.avif" alt="Anitha Alokam" class="key-team-img">
-            </div>
-          </div>
-          <div class="col-lg-6 my-3" data-aos="fade-up">
-            <div>
-              <h4>Anitha Alokam</h4>
-              <p class="key-team-designation">Director</p>
-              <p class="text-justify">Anitha Alokam has vast experience in the fields of administration and human resources management. Complex processes of employee hiring, training, performance appraisals have been simplified by Anitha Alokam by introducing dynamic employee review system. Inventory management, procurement and administrative work flows are exclusively created and managed by her.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <section>
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <p><span>Executive</span> <span class="description-title">Team</span></p>
-      </div><!-- End Section Title -->
-
-      <!-- Team -->
-      <div class="container">
-        <div class="team2-container">
-
-          <div class="col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/rajashekhar_perepa.avif" class="img-fluid w-100" alt="Raja Shekhar Perepa">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Raja Shekhar Perepa</h4>
-                <span>Director - Technology Innovations</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/rsn_murthy.avif" class="img-fluid w-100" alt="RSN Murthy">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>RSN Murthy</h4>
-                <span>Chief Operating Officer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/mahesh_buddharaju.avif" class="img-fluid w-100" alt="Mahesh Buddharaju">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Mahesh Buddharaju</h4>
-                <span>Head - IT Infrastructure</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/a_v_subba_rao.avif" class="img-fluid w-100" alt="Dr. A V Subba Rao">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Dr. A V Subba Rao</h4>
-                <span>Vice President - Geospatial Tech</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/vijay_bachu.avif" class="img-fluid w-100" alt="Vijay Bachu">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Vijay Bachu</h4>
-                <span>Vice President - HR</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-        </div>
-      </div>
-    <!-- Team end -->
-
-  </section>
-
-    </section><!-- /Team Section -->
+    </section>
+    <!-- /Services Section -->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section my-4">
@@ -738,8 +600,8 @@
                 <table class="w-100 h-75">
                   <tbody>
                     <tr>
-                      <td><a href="#">VISIT IOTIQ  <i class="bi bi-arrow-up-right"></i></a></td>
-                      <td><a href="#">VISIT OUR FEED  <i class="bi bi-arrow-up-right"></i></a></td>
+                      <td><a href="https://www.iotiq.co.in/">VISIT IOTIQ  <i class="bi bi-arrow-up-right"></i></a></td>
+                      <td><a href="https://www.instagram.com/iotiqautomation/">VISIT OUR FEED  <i class="bi bi-arrow-up-right"></i></a></td>
                     </tr>
                     <tr>
                       <td><a href="#">ACS Group Company</a></td>

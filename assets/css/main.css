@@ -340,7 +340,7 @@ h6 {
   .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
-    left: -90%;
+    left: -110%;
     visibility: visible;
   }
 }
@@ -2090,7 +2090,7 @@ section,
   border-bottom: 2px solid #e0e0e0;
   margin-bottom: 20px;
   color: #ffff;
-  background-color: #0095DA;
+  background-color: #0095da;
   text-align: center;
 }
 .contact-tab {
@@ -2099,8 +2099,8 @@ section,
   cursor: pointer;
   border: 1px #ffff solid;
 }
-@media(max-width:767px){
-  .contact-tab{
+@media (max-width: 767px) {
+  .contact-tab {
     padding: 10px 0px !important;
   }
 }
@@ -2110,7 +2110,6 @@ section,
 }
 .contact-form-section {
   display: none;
-
 }
 .contact-form-section.active {
   display: block;
@@ -2125,11 +2124,11 @@ section,
   padding: 10px;
   border: 1px solid #ccc;
 }
-.contact-input-container{
+.contact-input-container {
   margin-top: 20px;
 }
 .contact-form-button {
-  background-color: #1A6AFF;
+  background-color: #1a6aff;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -2137,11 +2136,11 @@ section,
   border-radius: 4px;
 }
 .contact-form-button:hover {
-  background-color: #5C94FD;
+  background-color: #5c94fd;
 }
 .custom-file-upload {
   display: inline-block;
-  background-color: #1A6AFF;
+  background-color: #1a6aff;
   color: white;
   padding: 12px 20px;
   cursor: pointer;
@@ -2160,10 +2159,41 @@ section,
   display: none;
 }
 
-p{
+p {
   font-size: 14px;
 }
 
-.services-page-container ul{
- font-size: 14px;
+.services-page-container ul {
+  font-size: 14px;
+}
+.iotiq-btn {
+  border: 1px #000000 solid;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+  margin: 20px 0px;
+}
+.iotiq-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.home-page-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.home-page-heading {
+  font-size: 30px;
+  font-weight: 600;
+}
+.banner-text-container {
+  text-align: left;
+  width: fit-content;
+}
+.banner-text {
+  font-size: 20px;
+  color: #606060 !important;
+  text-align: right;
+  display: block;
 }
