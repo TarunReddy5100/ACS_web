@@ -12,15 +12,35 @@
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
-  function toggleScrolled() {
+  let lastScrollState = false; // Track if the class is applied
+
+function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  }
 
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+    if (!selectHeader.classList.contains('scroll-up-sticky') && 
+        !selectHeader.classList.contains('sticky-top') && 
+        !selectHeader.classList.contains('fixed-top')) return;
+
+    const shouldBeScrolled = window.scrollY > 100;
+
+    // Only update if the state changes
+    if (shouldBeScrolled !== lastScrollState) {
+        lastScrollState = shouldBeScrolled;
+        selectBody.classList.toggle('scrolled', shouldBeScrolled);
+    }
+}
+
+// Debounce function
+let scrollTimeout;
+function debouncedToggle() {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(toggleScrolled, 700); // Slightly longer debounce
+}
+
+document.addEventListener('scroll', debouncedToggle);
+window.addEventListener('load', toggleScrolled);
+
 
   /**
    * Mobile nav toggle
