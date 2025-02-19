@@ -58,6 +58,26 @@
 :root {
   scroll-behavior: smooth;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0095DA;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0080bc;
+}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -1986,6 +2006,7 @@ section,
   display: block;
   text-align: center;
   margin-top: 10px;
+  color: #0095DA;
 }
 .bod-heading {
   text-align: center;
@@ -2144,7 +2165,7 @@ section,
 }
 .custom-file-upload {
   display: inline-block;
-  background-color: #1a6aff;
+  background-color: #0095DA;
   color: white;
   padding: 12px 20px;
   cursor: pointer;
@@ -2213,4 +2234,9 @@ p {
 
 .clients-list ul{
   margin: 0;
+}
+
+.investors-p{
+  font-size: 1rem;
+  color: black;
 }
