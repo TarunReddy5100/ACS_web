@@ -160,6 +160,7 @@
                     </li>
                   </ul>
                 </li>
+                <li><a href="clients.html">Clients</a></li>
                 <li class="dropdown"><a href="#"><span>Investors</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="board_of_directors.html">Board of Directors</a></li>
@@ -188,7 +189,6 @@
                   </ul>
                 </li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="clients.html">Clients</a></li>
                 <li><a href="newsletters.html">Newsletters</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
               </ul>
@@ -667,14 +667,14 @@
     <div></div>
   </div>
 
-  <script>
+    <script>
     function switchTab(tab) {
         document.querySelectorAll('.contact-form-section').forEach(section => section.classList.remove('active'));
         document.querySelector(`#${tab}`).classList.add('active');
         document.querySelectorAll('.contact-tab').forEach(button => button.classList.remove('active'));
         document.querySelector(`[data-contact-tab='${tab}']`).classList.add('active');
     }
-</script>
+    </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

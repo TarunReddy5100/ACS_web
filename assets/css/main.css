@@ -2102,6 +2102,10 @@ section,
 @media (max-width: 767px) {
   .contact-tab {
     padding: 10px 0px !important;
+    width: 100%;
+  }
+  .contact-contact-tabs {
+    flex-direction: column;
   }
 }
 .contact-tab.active {
@@ -2128,7 +2132,7 @@ section,
   margin-top: 20px;
 }
 .contact-form-button {
-  background-color: #1a6aff;
+  background-color: #0095DA;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -2136,7 +2140,7 @@ section,
   border-radius: 4px;
 }
 .contact-form-button:hover {
-  background-color: #5c94fd;
+  background-color: #31a4da;
 }
 .custom-file-upload {
   display: inline-block;
@@ -2196,4 +2200,17 @@ p {
   color: #606060 !important;
   text-align: right;
   display: block;
+}
+.clients-title p {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+.clients-title .description-title {
+  color: var(--accent-color);
+}
+
+
+.clients-list ul{
+  margin: 0;
 }
