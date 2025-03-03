@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "tarunreddy94786@gmail.com"; // Replace with your actual email
+    $to = "hello@acstechnologies.co.in"; // Replace with your actual email
     $subject = "New Contact Form Submission";
     
     // Determine which form was submitted
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Invalid form submission.");
     }
     
-    $headers = "From: tarunreddy04062001@gmail.com\r\n"; // Change to your domain email
+    $headers = "From: info@acstechnologies.co.in\r\n"; // Change to your domain email
     $headers .= "Reply-To: " . $_POST['email'] . "\r\n";
     
     if (mail($to, "$formType - $subject", $messageBody, $headers)) {

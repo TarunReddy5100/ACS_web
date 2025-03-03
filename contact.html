@@ -374,39 +374,39 @@
                                     <div class="row">
                                         <div class="col-md-6 contact-input-container">
                                             <label for="firstname">First Name</label>
-                                            <input class="contact-form-input" id="firstname" type="text" placeholder="First name">
+                                            <input class="contact-form-input" id="firstname" name="firstname" type="text" placeholder="First name">
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="lastname">Last Name</label>
-                                            <input class="contact-form-input" id="lastname" type="text" placeholder="Last name">
+                                            <input class="contact-form-input" id="lastname" name="lastname" type="text" placeholder="Last name">
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="email">Email*</label>
-                                            <input class="contact-form-input" id="email" type="email" placeholder="Email *" required>
+                                            <input class="contact-form-input" id="email" name="Email" type="email" placeholder="Email *" required>
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="phone">Phone*</label>
-                                            <input class="contact-form-input" id="phone" type="tel" placeholder="Phone *" required>
+                                            <input class="contact-form-input" id="phone" name="phone" type="tel" placeholder="Phone *" required>
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="companyname">Company Name*</label>
-                                            <input class="contact-form-input" id="companyname" type="text" required>
+                                            <input class="contact-form-input" id="companyname" name="companyname" type="text" required>
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="roleinthecompany">Role in the Company</label>
-                                            <input class="contact-form-input" id="roleinthecompany" type="text">
+                                            <input class="contact-form-input" id="roleinthecompany" name="roleinthecompany" type="text">
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="companywebsite">Company Website</label>
-                                            <input class="contact-form-input" id="companywebsite" type="url">
+                                            <input class="contact-form-input" id="companywebsite" name="companywebsite" type="url">
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="locationoraddress">Location or Address</label>
-                                            <input class="contact-form-input" id="locationoraddress" type="text">
+                                            <input class="contact-form-input" id="locationoraddress" name="locationoraddress" type="text">
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="message">Message*</label>
-                                            <textarea class="contact-form-textarea" id="message" placeholder="Message *" required></textarea>
+                                            <textarea class="contact-form-textarea" id="message" name="message" placeholder="Message *" required></textarea>
                                         </div>
                                     </div>
                                     <button class="contact-form-button" type="submit">Submit</button>
@@ -421,27 +421,27 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <h2 class="mt-3">General Enquiry</h2>
-                                <form class="contact-form">
+                                <form class="contact-form" action="contact_form.php" method="post">
                                     <div class="row">
                                         <div class="col-md-12 contact-input-container">
                                             <label for="fname">First name*</label>
-                                            <input class="contact-form-input" id="fname" type="text" required>
+                                            <input class="contact-form-input" id="fname" name="fname" type="text" required>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="position">Position*</label>
-                                            <input class="contact-form-input" id="position" type="text" required>
+                                            <input class="contact-form-input" id="position" name="position" type="text" required>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="cname">Company name*</label>
-                                            <input class="contact-form-input" id="cname" type="text" required>
+                                            <input class="contact-form-input" id="cname" name="cname" type="text" required>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="mail">Email*</label>
-                                            <input class="contact-form-input" id="mail" type="mail" required>
+                                            <input class="contact-form-input" id="mail" name="mail" type="mail" required>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="department">Department*</label>
-                                            <select class="contact-form-input" id="department" required>
+                                            <select class="contact-form-input" id="department" name="department" required>
                                                 <option value="" disabled selected></option>
                                                 <option value="Advertising Related">Advertising Related</option>
                                                 <option value="Education">Education</option>
@@ -455,15 +455,15 @@
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="location">Location or Address</label>
-                                            <input class="contact-form-input" id="location" type="text">
+                                            <input class="contact-form-input" id="location" name="location" type="text">
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="number">Phone</label>
-                                            <input class="contact-form-input" id="number" type="tel">
+                                            <input class="contact-form-input" id="number" name="number" type="tel">
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="description">Description</label>
-                                            <textarea class="contact-form-textarea" id="description"></textarea>
+                                            <textarea class="contact-form-textarea" id="description" name="description"></textarea>
                                         </div>
                                     </div>
                                     <button class="contact-form-button" type="submit">Submit</button>
@@ -478,11 +478,11 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <h2 class="mt-3">Voice it form</h2>
-                                <form class="contact-form">
+                                <form class="contact-form" action="contact_form.php" method="post">
                                     <div class="row">
                                         <div class="col-md-12 contact-input-container">
                                             <label for="relationwithacs">Relation with ACS*</label>
-                                            <select class="contact-form-input" id="relationwithacs" required>
+                                            <select class="contact-form-input" id="relationwithacs" name="relationwithacs" required>
                                                 <option value="" disabled selected></option>
                                                 <option value="Business Partner of ACS">Business Partner of ACS</option>
                                                 <option value="Not a Business Partner of ACS">Not a Business Partner of ACS</option>
@@ -490,7 +490,7 @@
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="typeofsubmission">Type of submission*</label>
-                                            <select class="contact-form-input" id="typeofsubmission" required>
+                                            <select class="contact-form-input" id="typeofsubmission" name="typeofsubmission" required>
                                                 <option value="" disabled selected></option>
                                                 <option value="Complaint">Complaint</option>
                                                 <option value="Appreciation">Appreciation</option>
@@ -499,15 +499,15 @@
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="company-name">Company name*</label>
-                                            <input class="contact-form-input" id="company-name" type="text" required>
+                                            <input class="contact-form-input" id="company-name" name="company-name" type="text" required>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="fullname">Full name*</label>
-                                            <input class="contact-form-input" id="fullname" type="text" required>
+                                            <input class="contact-form-input" id="fullname" name="fullname" type="text" required>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="jobtitle">Job title *</label>
-                                            <select class="contact-form-input" id="jobtitle" required>
+                                            <select class="contact-form-input" id="jobtitle" name="jobtitle" required>
                                                 <option value="" disabled selected></option>
                                                 <option value="CEO">CEO</option>
                                                 <option value="Director">Director</option>
@@ -520,21 +520,21 @@
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="call">Phone</label>
-                                            <input class="contact-form-input" id="call" type="tel">
+                                            <input class="contact-form-input" id="call" name="call" type="tel">
                                         </div>
                                         <div class="col-md-6 contact-input-container">
                                             <label for="Email">Email</label>
-                                            <input class="contact-form-input" id="Email" type="mail">
+                                            <input class="contact-form-input" id="Email" name="Email" type="mail">
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label for="description">Description*</label>
-                                            <textarea class="contact-form-textarea" id="description" required></textarea>
+                                            <textarea class="contact-form-textarea" id="description" name="description" required></textarea>
                                         </div>
                                         <div class="col-md-12 contact-input-container">
                                             <label class="upload-label" for="file-upload">File upload</label><br>
                                             <label for="file-upload" class="custom-file-upload">
                                                 + Upload File
-                                                <input type="file" id="file-upload">
+                                                <input type="file" id="file-upload" name="file-upload">
                                             </label>
                                         </div>
                                     </div>
