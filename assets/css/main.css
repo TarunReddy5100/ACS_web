@@ -2244,3 +2244,8 @@ p {
 .services-sfm-icon{
   width: 70px;
 }
+
+.director-details-thead td {
+  text-align: center;
+  align-content: center;
+}
